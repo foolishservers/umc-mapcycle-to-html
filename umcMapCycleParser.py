@@ -91,7 +91,7 @@ def main(argv):
         options = ''
         maps = ''
 
-        for key, value in groupValue.items():
+        for key, value in sorted(groupValue.items()):
             if key in groupOptions:
                 if key == 'default_min_players':
                     options += htmlOptionTemplate.format(key='최소 인원수', value=value)
